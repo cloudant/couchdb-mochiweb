@@ -23,6 +23,9 @@
 
 -module(mochiweb_http).
 -author('bob@mochimedia.com').
+
+-compile(tuple_calls).
+
 -export([start/1, start_link/1, stop/0, stop/1]).
 -export([loop/3]).
 -export([after_response/2, reentry/1]).
